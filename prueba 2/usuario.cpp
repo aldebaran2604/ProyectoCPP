@@ -1,3 +1,4 @@
+//Esto es un comentario de luis jose padilla benitez
 #include "usuario.h"
 #include "Herramientas.h"
 
@@ -96,7 +97,7 @@ void Usuario::AgregarUsuario()
 	std::cin.clear();
 	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-	std::cout << "ingrese su año de nacimiento: " << std::endl;
+	std::cout << "ingrese su aÃ±o de nacimiento: " << std::endl;
 	std::cin >> nuevoUsuario->aniodenacimiento;
 
 	std::cin.clear();
@@ -120,7 +121,7 @@ void Usuario::AgregarUsuario()
 	std::cin.clear();
 	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-	std::cout << "ingrese su contraseña: " << std::endl;
+	std::cout << "ingrese su contraseÃ±a: " << std::endl;
 	getline(std::cin, nuevoUsuario->password);
 
 	std::cin.clear();
@@ -205,7 +206,7 @@ void Usuario::EditarUsuario()
 		std::cin.clear();
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-		std::cout << "ingrese su año de nacimiento: " << std::endl;
+		std::cout << "ingrese su aÃ±o de nacimiento: " << std::endl;
 		std::cin >> usuarioEditar->aniodenacimiento;
 
 		std::cin.clear();
@@ -229,7 +230,7 @@ void Usuario::EditarUsuario()
 		std::cin.clear();
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-		std::cout << "ingrese su contraseña: " << std::endl;
+		std::cout << "ingrese su contraseÃ±a: " << std::endl;
 		getline(std::cin, usuarioEditar->password);
 
 		std::cout << "se edit exitosamente." << std::endl;
@@ -258,7 +259,7 @@ void Usuario::GuardarUsuarios()
 	{
 		//se guarda cada uno de los usuarios en el archivo
 		// (char*)& usuario se convierte el usuario a texto para guardarlo
-		//size of (usuario) obtiene ewl tamaño del objeto apra saber cuanto espacio se va atomar  en el archivo
+		//size of (usuario) obtiene ewl tamaÃ±o del objeto apra saber cuanto espacio se va atomar  en el archivo
 		archivoUsuarios.write((char*)&usuario, sizeof(usuario));
 	}
 
